@@ -7,15 +7,15 @@ and it achieves competitive performance compared to other state-of-the-art model
 ## Implementation Details
 The implementation is based on PyTorch. Specifically, we replicate each experiment using three different random seeds: 1, 10, and 100. All GNNs are optimized with Adam optimizer. The training is conducted for 1,000 epochs with learning rate chosen from \{0.1, 0.01, 0.001\}. The GNNs feature a hidden dimension of 16 and employ dropout rates selected from \{0.2, 0.5, 0.8\}. Additionally, we experiment with iteration numbers for Hessian matrix inverse estimation ranging from \{10, 50, 100, 500, 1000, 5000\} to optimize performance. All experiments are conducted on a device equipped with two GeForce RTX 4080 Super GPUs.
 ## Requirements
-Python == 3.8.18
-torch == 1.8.0 + cu111
-cuda == 11.1
-torch-geometric == 1.7.0
-torch-scatter == 2.0.6
-torch-sparse == 0.6.9
-torch-spline-conv == 1.2.1
-dgl == 0.6.1
-scikit-learn == 0.23.1
-numpy == 1.22.0
-scipy == 1.4.1
-networkx == 2.4
+- **Python**: == 3.8.18
+- **torch**: == 1.8.0 + cu111
+- **cuda**: == 11.1
+- **torch-geometric**: == 1.7.0
+- **torch-scatter**: == 2.0.6
+- **torch-sparse**: == 0.6.9
+- **torch-spline-conv**: == 1.2.1
+- **dgl**: == 0.6.1
+- **scikit-learn**: == 0.23.1
+- **numpy**: == 1.22.0
+- **scipy**: == 1.4.1
+- **networkx**: == 2.4
